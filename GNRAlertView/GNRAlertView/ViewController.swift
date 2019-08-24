@@ -8,13 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, BDMBottomAlertHandler {
+  internal var bottomAlert: BDMBottomAlert?
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    print("change branch")
+    // Do any additional setup after loading the view.
   }
-
-
+  
+  
+  @IBAction private func btnAction(){
+    presentBottomAlert(message: "Hello World", canBeClosed: true, animated: true)
+    
+  }
+  
+  @IBAction private func btnCloe(){
+    dismissBottomAlert(animated: true)
+  }
 }
 

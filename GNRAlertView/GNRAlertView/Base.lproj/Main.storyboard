@@ -1,23 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PdW-Fw-AI9">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="3qf-4G-Ckp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="PdW-Fw-AI9" customClass="ViewController" customModule="CustomAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ORh-ki-CX8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijW-a2-XFY">
+                                <rect key="frame" x="50" y="100" width="124" height="30"/>
+                                <state key="normal" title="ShowCustomAlert"/>
+                                <connections>
+                                    <action selector="btnAction" destination="PdW-Fw-AI9" eventType="touchUpInside" id="6YT-sl-gSr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bls-XW-RJT">
+                                <rect key="frame" x="239" y="100" width="125" height="30"/>
+                                <state key="normal" title="CloseCustomAlert"/>
+                                <connections>
+                                    <action selector="btnCloe" destination="PdW-Fw-AI9" eventType="touchUpInside" id="RXZ-3r-k47"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="ijW-a2-XFY" firstAttribute="top" secondItem="OnW-d9-CxE" secondAttribute="top" constant="56" id="KCd-iO-TRJ"/>
+                            <constraint firstItem="OnW-d9-CxE" firstAttribute="trailing" secondItem="bls-XW-RJT" secondAttribute="trailing" constant="50" id="Xsr-qg-su1"/>
+                            <constraint firstItem="bls-XW-RJT" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ijW-a2-XFY" secondAttribute="trailing" constant="99" id="YJX-8C-fQn"/>
+                            <constraint firstItem="bls-XW-RJT" firstAttribute="centerY" secondItem="ijW-a2-XFY" secondAttribute="centerY" id="b0V-ud-rMP"/>
+                            <constraint firstItem="ijW-a2-XFY" firstAttribute="leading" secondItem="OnW-d9-CxE" secondAttribute="leading" constant="50" id="iy7-oP-mPg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OnW-d9-CxE"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="inG-J0-rLq" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
