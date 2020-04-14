@@ -12,6 +12,9 @@
 		E4765E892310F74400B85CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4765E872310F74400B85CD9 /* Main.storyboard */; };
 		E4765E8B2310F74500B85CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4765E8A2310F74500B85CD9 /* Assets.xcassets */; };
 		E4765E8E2310F74500B85CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4765E8C2310F74500B85CD9 /* LaunchScreen.storyboard */; };
+		E4FF2AB8244664E4001E2A33 /* GNRBottonXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF2AB4244664E4001E2A33 /* GNRBottonXIB.swift */; };
+		E4FF2AB9244664E4001E2A33 /* GNRBottonXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4FF2AB5244664E4001E2A33 /* GNRBottonXIB.xib */; };
+		E4FF2ABA244664E4001E2A33 /* extensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FF2AB7244664E4001E2A33 /* extensionUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		E4765E8A2310F74500B85CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4765E8D2310F74500B85CD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4765E8F2310F74500B85CD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4FF2AB4244664E4001E2A33 /* GNRBottonXIB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNRBottonXIB.swift; sourceTree = "<group>"; };
+		E4FF2AB5244664E4001E2A33 /* GNRBottonXIB.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GNRBottonXIB.xib; sourceTree = "<group>"; };
+		E4FF2AB7244664E4001E2A33 /* extensionUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensionUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		E4765E822310F74400B85CD9 /* GNRAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				E4FF2AB6244664E4001E2A33 /* Extensions */,
+				E4FF2AB3244664E4001E2A33 /* Views */,
 				E4765E832310F74400B85CD9 /* AppDelegate.swift */,
 				E4765E852310F74400B85CD9 /* ViewController.swift */,
 				E4765E872310F74400B85CD9 /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				E4765E8F2310F74500B85CD9 /* Info.plist */,
 			);
 			path = GNRAlertView;
+			sourceTree = "<group>";
+		};
+		E4FF2AB3244664E4001E2A33 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4FF2AB4244664E4001E2A33 /* GNRBottonXIB.swift */,
+				E4FF2AB5244664E4001E2A33 /* GNRBottonXIB.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4FF2AB6244664E4001E2A33 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4FF2AB7244664E4001E2A33 /* extensionUIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4765E8E2310F74500B85CD9 /* LaunchScreen.storyboard in Resources */,
+				E4FF2AB9244664E4001E2A33 /* GNRBottonXIB.xib in Resources */,
 				E4765E8B2310F74500B85CD9 /* Assets.xcassets in Resources */,
 				E4765E892310F74400B85CD9 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +163,8 @@
 			files = (
 				E4765E862310F74400B85CD9 /* ViewController.swift in Sources */,
 				E4765E842310F74400B85CD9 /* AppDelegate.swift in Sources */,
+				E4FF2ABA244664E4001E2A33 /* extensionUIView.swift in Sources */,
+				E4FF2AB8244664E4001E2A33 /* GNRBottonXIB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
